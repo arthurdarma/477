@@ -1,7 +1,7 @@
 # Project Plan
 
 ## Overview
-This project will analyze long-term economic trends in the United States by 
+This project will analyze long term economic trends in the United States by 
 examining the relationship between housing prices and wages over the last 40 years. 
 Housing affordability is a growing economic concern as many believe that wage growth 
 has not kept pace with rising housing costs. By using real historical data, this project will 
@@ -39,18 +39,37 @@ prices in U.S. dollars, making it useful for interpreting inflation-adjusted aff
 and providing real-world context to the analysis. All three datasets will be downloaded in 
 CSV format.
 
-This project will follow the data lifecycle model introduced in class, 
-beginning with data acquisition from the FRED database, where datasets will be downloaded 
-in CSV format and stored in a structured repository. Raw data will be preserved without 
-alteration, and metadata will be documented to describe the origin, structure, and 
-variables of each dataset. Data will be integrated using Python and the Pandas library by 
-aligning datasets on a common year variable. During this process, data quality checks will be 
-conducted to identify missing years, inconsistent units, or unusual values. 
-Cleaning procedures will be applied as necessary, including handling missing records and 
-potentially adjusting income values for inflation to allow meaningful comparisons over time. 
-All datasets used are publicly available and contain no personal or sensitive information, 
-so privacy risks are minimal; however, ethical data practices will still be maintained, 
-including citing all sources and avoiding misleading transformations.
+## Data Lifecycle Approach
+This project will follow the data lifecycle model introduced in class. 
+Data will first be acquired from FRED through CSV downloads and stored in a 
+structured repository. Raw data will be preserved unmodified. Metadata will be documented 
+to describe dataset origin, structure, and variables. The datasets will then be integrated 
+using Python and the Pandas library by matching on the year variable. Data quality checks 
+will be performed to identify any missing years, unit inconsistencies, or unusual values. 
+Cleaning procedures will be applied as needed, including handling missing data and adjusting 
+income values for inflation to allow meaningful comparisons. The data will then be analyzed 
+using descriptive statistics, and visualizations of long-term trends.
+
+## Ethical Data Handling
+This project uses publicly available datasets that do not include any personal or 
+sensitive information, so privacy risk is minimal. All data sources will be credited to 
+meet licensing and reuse requirements. Transparency will be maintained through proper 
+citations and by documenting methods clearly. No data manipulation will be performed that 
+could misrepresent findings.
+
+## Storage and Organization
+Data will be organized using a clear folder structure within the GitHub repository. 
+Raw data will be stored in a "data/raw" directory, and cleaned or merged data will be saved 
+in a "data/processed" directory. Jupyter notebooks will be stored in a "notebooks" directory
+, while documentation including reports will be stored in a "docs" folder. 
+This structure will support project clarity and reproducibility.
+
+
+## Workflow and Reproducibility
+The analysis will be conducted using Jupyter notebooks to provide a clear 
+and reproducible workflow. Each step of the process, from data loading to final 
+visualizations, will be documented. GitHub will be used for version control to track 
+changes and ensure provenance. 
 
 ## Timeline
 Data collection and repository structure setup will be completed by mid to late October. 

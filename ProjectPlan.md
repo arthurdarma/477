@@ -2,7 +2,7 @@
 
 ## Overview
 This project will analyze long term economic trends in the United States by 
-examining the relationship between housing prices and wages over the last 40 years. 
+examining the relationship between housing prices and wages over the last 40 years. Recent years, especially after the COVID-19 pandemic, we have seen housing price surges while wage growth remained moderate. This widening gap has drawn attention concerned with generational wealth and housing accessibility.
 Housing affordability is a growing economic concern as many believe that wage growth 
 has not kept pace with rising housing costs. By using real historical data, this project will 
 evaluate how housing prices and median household income have changed over time and whether 
@@ -39,6 +39,8 @@ prices in U.S. dollars, making it useful for interpreting inflation-adjusted aff
 and providing real-world context to the analysis. All three datasets will be downloaded in 
 CSV format.
 
+In addition to these primary datasets, we may include the Consumer Price Index (CPI-U) from FRED to adjust median household income and housing prices for inflation, ensuring all values are comparable in real terms. This will help provide a more accurate picture of affordability over time. To improve interpretability, data will also be standardized by indexing both income and housing prices to a common base year (e.g., 1980 = 100). This allows percentage growth comparisons across decades. Each dataset’s metadata including variable names, frequency, and units will be documented in a shared data dictionary to support transparency and reproducibility.
+
 ## Data Lifecycle Approach
 This project will follow the data lifecycle model introduced in class. 
 Data will first be acquired from FRED through CSV downloads and stored in a 
@@ -48,7 +50,7 @@ using Python and the Pandas library by matching on the year variable. Data quali
 will be performed to identify any missing years, unit inconsistencies, or unusual values. 
 Cleaning procedures will be applied as needed, including handling missing data and adjusting 
 income values for inflation to allow meaningful comparisons. The data will then be analyzed 
-using descriptive statistics, and visualizations of long-term trends.
+using descriptive statistics, and visualizations of long-term trends. One potential analysis we are looking to do is to calculate a ‘housing affordability ratio,’ such as median house price divided by median household income, to quantitatively show how affordability changed over time.
 
 ## Ethical Data Handling
 This project uses publicly available datasets that do not include any personal or 
@@ -69,7 +71,7 @@ This structure will support project clarity and reproducibility.
 The analysis will be conducted using Jupyter notebooks to provide a clear 
 and reproducible workflow. Each step of the process, from data loading to final 
 visualizations, will be documented. GitHub will be used for version control to track 
-changes and ensure provenance. 
+changes and ensure provenance. For example, we are looking to include charts comparing inflation-adjusted income and housing prices over time, and maybe highlighting decade-over-decade percentage changes.
 
 ## Timeline
 Data collection and repository structure setup will be completed by mid to late October. 
@@ -79,11 +81,16 @@ The main analysis and visualization work will be done through late November. The
 report and GitHub release will be completed by December 10, 2025.
 
 ## Constraints
-Income values may need inflation adjustment using an additional dataset.
+- Income values may require inflation adjustment using an additional dataset.  
+- The data is not yet standardized by indexing both income and housing prices to a common base year, which may limit direct comparison of growth rates.  
+- Regional variations in housing prices and income are also not currently addressed — future work could incorporate state-level or metropolitan data for deeper insight.  
+- Major economic shocks (e.g., the 2008 financial crisis and COVID-19) have not yet been isolated, which could affect the interpretation of long-term trends.  
+- Project timing and data availability may restrict the use of more advanced analytical methods beyond descriptive statistics.
 
 ## Gaps
-A decision has not yet been made on how to adjust for inflation, though using the 
-Consumer Price Index dataset is a likely approach. 
+- A clear decision has not yet been made on how to perform inflation adjustment, though the Consumer Price Index (CPI) from FRED is the most likely approach.  
+- The analysis currently focuses on national averages, which may obscure inequality between regions or demographic groups.  
+- Further research could explore whether affordability trends differ across age cohorts, income brackets, or housing types to provide a more comprehensive understanding of the issue.
 
 ## References
 Federal Reserve Economic Data (FRED): https://fred.stlouisfed.org  

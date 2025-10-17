@@ -18,7 +18,7 @@ or economic periods where gaps between wages and housing prices widened signific
 ## Team
 This project will be completed by two team members: Arthur Darma who will serve as the 
 Data Acquisition, Data Integration and Analysis Lead, and Laura, who will serve as the 
-Documentation Lead. I will be responsible for downloading and managing datasets, 
+Documentation Lead. Arthur will be responsible for downloading and managing datasets, 
 integrating datasets, performing analysis using Python, and creating visualizations. 
 Laura will focus on documenting metadata, and assisting with Markdown documentation. 
 Both of us will collaborate on data cleaning, analysis decisions, GitHub commits, and 

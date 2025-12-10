@@ -88,6 +88,7 @@ pip install -r requirements.txt
 All raw input data needed by the notebook is already included in the repository under:
 data/raw/MSPUS.csv
 data/raw/MEHOINUSA646N.csv
+
 4. Next, open the Jupyter notebook:
 ```
 jupyter notebook notebooks/housing_affordability_analysis.ipynb

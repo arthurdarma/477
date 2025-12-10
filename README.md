@@ -99,6 +99,8 @@ For archival and grading purposes, this processed output CSV is also uploaded to
 
 https://uofi.box.com/s/1g6aryqtevrpbgh4xjvqa35vd0t3sy0c
 
+While Snakemake could automate the workflow, given the simplicity of our pipeline, we use a single Jupyter Notebook with a Run All instruction instead.
+
 ## References
 
 Federal Reserve Economic Data (FRED). Median Sales Price of Houses Sold in the United States (MSPUS). https://fred.stlouisfed.org/series/MSPUS
